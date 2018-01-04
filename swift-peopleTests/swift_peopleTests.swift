@@ -24,6 +24,8 @@ class swift_peopleTests: XCTestCase {
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        let jim = Person(name: "Jim",ageInYears: 41)
+        XCTAssert(jim.celebrateBirthday().contains("41"))
     }
     
     func testPerformanceExample() {
